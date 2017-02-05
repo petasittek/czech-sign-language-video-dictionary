@@ -765,6 +765,6 @@ navEl.innerHTML = navHtml;
 document.querySelector('.l-wrapper__nav').addEventListener('click', function (e) {
         if (e.target && e.target.matches('.link')) {
             document.querySelector('.video__title').textContent = e.target.dataset.title;
-            document.querySelector('.video__player').src = `https://www.youtube.com/embed/${e.target.dataset.id}?autoplay=1&rel=0&showinfo=0`;
+            document.querySelector('.video__player').src = `https://www.youtube.com/embed/${e.target.dataset.id}?autoplay=1&rel=0&showinfo=0&loop=1&playlist=${e.target.dataset.id}`;
         }
     });
